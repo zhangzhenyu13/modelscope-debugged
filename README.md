@@ -1,3 +1,8 @@
+# Bug FIx of original modelscope project
+## the gpt3 trainer only save 1/world-size weights, this is due to terrible configure settings and wrong dist group holding  on ddp or tensor_parallel
+## we fix the problem by saving multi-weights
+
+
 
 <div align="center">
 
